@@ -1,0 +1,41 @@
+<html>
+    <head>
+    <title>{{title}}</title>
+    <style>
+        .main{
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+    <body>
+        <div class="main">Hello World!! | Dombivli | Welcome</div>
+        {% for i in clist %} 
+        <div> 
+            {{i}}
+
+        </div>
+        {% endfor %}
+
+        {% for j in numlist %}
+
+        {% if j > 20 %}
+        <div>{{j}}</div>
+        
+
+        {% endif %}
+
+
+        {% endfor %}
+
+        {% if numlist|length > 13 %}
+        {{"Yes"}}
+
+        {% else %}
+        {{numlist|length}}
+        {{"No"}}
+
+        {% endif %}
+
+    </body>
+</html>
