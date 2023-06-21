@@ -1,0 +1,18 @@
+{% extends 'header.html' %}
+
+{% block mycontent %}
+
+<div>Hello my name is Ganesh</div>
+
+<form method="post">
+    {% csrf_token %}
+    <label>First Number: <br> </label>
+    <input name="val1" value="0"><br>
+    <label>Second Number: <br></label>
+    <input name="val2" value="0"><br>
+    <button type="submit">Submit</button>
+</form>
+
+<div>{{output}}</div>
+
+{% endblock %}

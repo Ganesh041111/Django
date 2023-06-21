@@ -23,6 +23,7 @@ urlpatterns = [
     path("", views.home),
     path("about-us", views.aboutUs),
     path("courses", views.courses),
-    path("courses/<str:courseid>", views.course)
+    path("courses/<str:courseid>", views.course),
+    path("calculation", views.calculation)
 
 ]
